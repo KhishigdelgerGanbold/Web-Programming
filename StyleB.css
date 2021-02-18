@@ -1,0 +1,52 @@
+﻿#mode {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 98vw;
+    height: 98vh;
+
+}
+
+    .container > p {
+        width: 100px;
+        margin: 10px;
+        height: 150px;
+        font-family: Tahoma;
+        font-size: 40px;
+        background-color: #eeeff2;
+        border-left: 10px dotted #D0D0FF;
+        
+    }
+
+        .container > p:last-child {
+           /* flex-direction: column;
+            align-self: flex-end; */
+           position:absolute;
+           right:0;
+           bottom:0;
+        }
+
+        .container > p:nth-child(odd):hover {
+            cursor: pointer;
+            background-color: yellow;
+        }
+
+        .container > p:nth-child(even):hover {
+            cursor: pointer;
+            background-color: goldenrod;
+        }
+
+
+
+.cont-text {
+    padding-top: 10px;
+    padding-left: 10px;
+}

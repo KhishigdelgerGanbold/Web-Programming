@@ -1,0 +1,72 @@
+﻿#mode {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(sl.woff);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 98vw;
+    height: 98vh;
+}
+
+    .container > p {
+        width: 100px;
+        margin: 10px;
+        height: 150px;
+        font-family: Tahoma;
+        font-size: 40px;
+        background-color: #eeeff2;
+        border-left: 10px dotted #D0D0FF;
+    }
+
+        .container > p:first-child:hover {
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+
+        .container > p:nth-child(2):hover {
+            transition: height 2s;
+            height:300px;
+        }
+
+        .container > p:nth-child(3):hover {
+            animation-name: anim;
+            animation-duration: 2s;
+        }
+
+        .container > p:nth-child(4):hover {
+            font-family:myFont;
+        }
+
+        .container > p:nth-child(5):hover {
+            text-shadow: 3px 3px 6px purple;
+        }
+
+@keyframes anim {
+    from {
+        background-color: #eeeff2;
+    }
+
+    to {
+        background-color: aquamarine;
+    }
+}
+
+
+
+
+
+
+.cont-text {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+

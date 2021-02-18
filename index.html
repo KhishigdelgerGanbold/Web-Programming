@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="StyleA.css" id="styles" rel="stylesheet" type="text/css">
+    <title>ICSI301 - Laboratory #1</title>
+</head>
+<body>
+
+    <script>
+        $(document).ready(function () {
+            $('#mode').click(function () {
+                if ($('link#styles').attr('href') == "StyleA.css") {
+                    $('#mode').attr('value', 'Switch Styles')
+                    $('link#styles').attr('href', 'StyleB.css')
+                }
+                else if
+                    ($('link#styles').attr('href') == "StyleB.css") {
+                    $('#mode').attr('value', 'Switch Styles')
+                    $('link#styles').attr('href', 'StyleC.css')
+                }
+                else {
+                    $('#mode').attr('value', 'Switch Styles')
+                    $('link#styles').attr('href', 'StyleA.css')
+                }
+            })
+
+        });
+    </script>
+
+    <input type=button id="mode" text="Switch Mode" class="btn btn-primary" value="Switch Styles">  
+    
+
+    <div class="container">
+        <p class="cont-text">A</p>
+        <p class="cont-text">B</p>
+        <p class="cont-text">C</p>
+        <p class="cont-text">D</p>
+        <p class="cont-text">E</p>
+        <p id="last" class="cont-text">F</p>
+    </div>
+
+</body>
+</html>
